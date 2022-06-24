@@ -1,0 +1,94 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/mvp/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<link rel="icon" href="https://via.placeholder.com/70x70">  -->
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Animation of std::stable_partition with manim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>std::stable_partition with manim</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/"></a>
+            <ul>
+                <li><a href="https://en.cppreference.com/w/cpp/algorithm/stable_partition">std::stable_partition</a></li>
+                <li><a href="https://github.com/ManimCommunity/manim/">manim</a></li>
+            </ul>
+        </nav>
+        <h1>std::stable_partition animation</h1>
+        <p>with manim</mark></p>
+        <br>
+        <p>
+            <a href="#additionalMemory"><b>Additional Memory &rarr;</b></a>
+            <a href="#inPlace"><b>In-Place &rarr;</b></a>
+        </p>
+    </header>
+    <main>
+        <hr>
+        <div>
+                <h2>Function definition</h2>
+            <pre>
+                <code>
+template< class BidirIterator, class UnaryPredicate >
+BidirIterator stable_partition( BidirIterator first, BidirIterator last, UnaryPredicate p );
+                </code>
+            </pre>
+            <details>
+                <summary>Effect</summary>
+                <p>std::stable_partition reorders the elements in the range [first, last) in such a way that all elements for which the predicate p returns true precede the elements for which predicate p returns false. Relative order of the elements is preserved. </p>
+            </details>
+            <details>
+                <summary>Return</summary>
+                <p>Iterator to the first element of the second group</p>
+            </details>
+            <details>
+                <summary>Complexity</summary>
+                <p>
+                    Given N = <code>std::distance(first, last)</code>,
+                    <ol>
+                        <li>Exactly N applications of the predicate and O(N) swaps if there is enough extra memory. If memory is insufficient, at most N log N swaps.</li>
+                        <li>O(N log N) swaps and O(N) applications of the predicate</li>
+                    </ol>
+                </p>
+            </details>
+        </div>
+        <hr>
+        <article id="additionalMemory">
+            <h2>Additional Memory</h2>
+            <figure>
+                <video controls>
+                    <source src="media/videos/stableParition/480p15/AdditionalMemory.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+                <figcaption><i>std::stable_parition additional memory</i></figcaption>
+            </figure>
+        </article>
+        <hr>
+        <article id="inPlace">
+            <h2>In-Place</h2>
+            <figure>
+                <video controls>
+                    <source src="media/videos/stableParition/480p15/InPlace2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> 
+                <figcaption><i>std::stable_parition in-place</i></figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <hr>
+        <p>
+            <small>Made with &hearts;</small>
+        </p>
+    </footer>
+</body>
+
+</html>
