@@ -3,6 +3,7 @@
 ## Links
 - [std::stable_parition](https://en.cppreference.com/w/cpp/algorithm/stable_partition)
 - [manim](https://github.com/ManimCommunity/manim/)
+- [animation](https://lukki15.github.io/stable_partition_manim/)
 
 ## Dependencies
 The animations were made with the [manim](https://github.com/ManimCommunity/manim/) animation engine.
@@ -49,6 +50,8 @@ $ python3 -m manim stableParition.py InPlace2
 ```
 
 ## Animations
+
+click [here](https://lukki15.github.io/stable_partition_manim/), in case the gifs are not playing automatically
 
 ### Additional Memory
 
