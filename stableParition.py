@@ -12,7 +12,7 @@ class BaseStableParition(MovingCameraScene):
 		for i in range(1, self.ARRAY_SIZE):
 			squares[i].next_to(squares[i-1], RIGHT)
 
-		self.bring_to_back(*squares)
+		#self.bring_to_back(*squares)
 
 		return squares
 	
